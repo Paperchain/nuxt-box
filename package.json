@@ -1,0 +1,31 @@
+{
+  "name": "nuxt-web3-boilerplate",
+  "version": "1.0.0",
+  "description": "Nuxt.js and web3 template project",
+  "author": "pyyding <kaspar.pyyding@gmail.com>",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "lintfix": "eslint --fix --ext .js,.vue --ignore-path .gitignore --ignore-pattern migrations/ --ignore-pattern test/ .",
+    "precommit": "npm run lint"
+  },
+  "dependencies": {
+    "nuxt": "^1.0.0",
+    "web3": "^1.0.0-beta.34",
+    "web3-eth-abi": "^1.0.0-beta.34"
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.2.3",
+    "eslint": "^4.19.1",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-friendly-formatter": "^3.0.0",
+    "eslint-loader": "^1.9.0",
+    "eslint-plugin-prettier": "^2.6.0",
+    "eslint-plugin-vue": "^4.5.0",
+    "prettier": "^1.12.1"
+  }
+}

@@ -16,7 +16,8 @@
   "dependencies": {
     "nuxt": "^1.0.0",
     "web3": "^1.0.0-beta.34",
-    "web3-eth-abi": "^1.0.0-beta.34"
+    "web3-eth-abi": "^1.0.0-beta.34",
+    "websocket": "^1.0.26"
   },
   "devDependencies": {
     "babel-eslint": "^8.2.3",

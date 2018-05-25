@@ -1,5 +1,10 @@
 .idea
 
+.nuxt
+
+# Dependency directories
 node_modules/
 
-.nuxt
+# Truffle
+build
+dist

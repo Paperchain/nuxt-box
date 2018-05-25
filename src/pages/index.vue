@@ -8,10 +8,27 @@
       <h2 class="subtitle">
         Nuxt.js and web3 template project
       </h2>
-      <div class="calls">
-        <button @click="getTokenName">Get Token Name</button>
+      <h3 class="paragraph-title">Get Token Name</h3>
+      <div class="row">
         <div>
-          <span>{{ tokenName }}</span>
+          <button @click="getTokenName">Get Name</button>
+          <span style="margin-left: 10px">{{ tokenName }}</span>
+        </div>
+      </div>
+      <div>
+        <h3 class="paragraph-title">Transfer tokens</h3>
+        <div class="row">
+          Recipent Address: <input v-model="recipentAddress" title="Recipent">
+        </div>
+        <div class="row">
+          Amount: <input v-model="amount" title="Amount">
+        </div>
+        <div class="row">
+          <button @click="transfer">Send</button>
+        </div>
+        <div class="receipt-box">
+          Receipt:
+          <span style="color:green">{{ transferReceipt }}</span>
         </div>
       </div>
     </div>
@@ -27,12 +44,21 @@ export default {
 	},
 	data() {
 		return {
-			tokenName: ''
+			tokenName: '',
+			recipentAddress: '',
+			transferReceipt: '',
+			amount: 0
 		}
 	},
 	methods: {
 		async getTokenName() {
 			this.tokenName = await this.$store.dispatch('eip20/getName')
+		},
+		async transfer() {
+			this.transferReceipt = await this.$store.dispatch('eip20/transfer', {
+				to: this.recipentAddress,
+				value: this.amount
+			})
 		}
 	}
 }
@@ -65,7 +91,21 @@ export default {
 	padding-bottom: 15px;
 }
 
-.links {
+.paragraph-title {
+	font-weight: 300;
+	font-size: 20px;
+	color: #35495e;
+	word-spacing: 5px;
+	padding: 15px 0;
+}
+
+.receipt-box {
 	padding-top: 15px;
+	width: 900px;
+	word-break: break-all;
+}
+
+.row {
+	padding: 10px;
 }
 </style>

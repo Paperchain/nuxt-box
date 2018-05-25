@@ -13,25 +13,60 @@ Truffle Box for Nuxt.js development.
     Custom RPC with address: http://localhost:9545 from Metamask Networks tab.
     
 1) Open terminal and run the development server: `truffle develop`
-2) deploy the contracts to local blockhain: `migrate --reset`
-3) Copy token address from the terminal:
+2) Connect local-rpc account with MetaMask. Follow [this answer](https://ethereum.stackexchange.com/questions/30593/how-can-i-import-the-accounts-from-truffle-develop-into-metamask) on Ethereum StackExchange.
+This account will have tokens and ether for transactions.
+3) deploy the contracts to local blockhain: `migrate --reset`
+4) Copy token address from the terminal:
 
 ```
 EIP20: 0x345ca3e014aaf5dca488057592ee47305d9b3e10
 ```
 
-4) Paste the token address to **src/eip20/eip20.js** where it says:
+5) Paste the token address to **src/store/eip20.js** where it says:
 
 ```
 const tokenAddress = '0x345ca3e014aaf5dca488057592ee47305d9b3e10'
 // insert deployed EIP20 token address here
-
 ```
 
-5) Open a new terminal tab and run the webapp: `npm run dev`
+6) Open a new terminal tab and run the webapp: `npm run dev`
 
-6) Connect local-rpc account with MetaMask. Follow [this answer](https://ethereum.stackexchange.com/questions/30593/how-can-i-import-the-accounts-from-truffle-develop-into-metamask) on Ethereum StackExchange.
-This account will have tokens and ether for transactions.
+
+## Web app commands
+
+``` bash
+# install dependencies
+$ npm install # Or yarn install
+
+# serve with hot reload at localhost:3000
+$ npm run dev
+
+# build for production and launch server
+$ npm run build
+$ npm start
+
+# generate static project
+$ npm run generate
+
+# lint or lintfix
+$ npm run lint
+$ npm run lintfix
+```
+
+## Truffle commands
+
+``` bash
+# run contract tests
+$ truffle test
+
+# run truffle development mode (run local blockchain)
+$ truffle develop
+
+# deploy contracts to local blockchain
+$ truffle migrate --reset
+$ migrate --reset (when in development mode)
+```
+
 
 ## Credits
 

@@ -3,10 +3,10 @@
     <div>
       <app-logo/>
       <h1 class="title">
-        nuxt-web3-boilerplate
+        nuxt-box
       </h1>
       <h2 class="subtitle">
-        Nuxt.js and web3 template project
+        Truffle box for Nuxt.js development
       </h2>
       <h3 class="paragraph-title">Get Token Name</h3>
       <div class="row">

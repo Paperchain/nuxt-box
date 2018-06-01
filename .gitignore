@@ -7,4 +7,5 @@ node_modules/
 
 # Truffle
 build
+!build/README.md
 dist

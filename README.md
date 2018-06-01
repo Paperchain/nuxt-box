@@ -1,22 +1,22 @@
 # nuxt-box
-Truffle Box for Nuxt.js development.
+nuxt-box is a truffle box using the [Nuxt.js]("https://nuxtjs.org") framework to create a [Vue.js]("https://vuejs.org/") application that can interact with the smart contracts on [Ethereum]("https://ethereum.org/").
 
-## Installation
-- Install truffle: `npm i -g truffle`
+## Setup & Installation
+- Install [truffle]("http://truffleframework.com"): `npm i -g truffle`
 - Clone the repository: `git clone https://github.com/Paperchain/nuxt-box`
 - Install package depencencies: `npm i`
-- Install [Metamask browser extension](https://metamask.io/)
+- Install [Metamask browser extension]("https://metamask.io/")
 
-## Running the test application
+## Running the Application
 
     If you have MetaMask set for your browser, configure a 
     Custom RPC with address: http://localhost:9545 from Metamask Networks tab.
     
 1) Open terminal and run the development server: `truffle develop`
-2) Connect local-rpc account with MetaMask. Follow [this answer](https://ethereum.stackexchange.com/questions/30593/how-can-i-import-the-accounts-from-truffle-develop-into-metamask) on Ethereum StackExchange.
+2) Connect local-rpc account with MetaMask. Follow [this answer]("https://ethereum.stackexchange.com/questions/30593/how-can-i-import-the-accounts-from-truffle-develop-into-metamask") on Ethereum StackExchange.
 This account will have tokens and ether for transactions.
-3) deploy the contracts to local blockhain: `migrate --reset`
-4) Copy token address from the terminal:
+3) Deploy the contracts to the local-rpc: `migrate --reset`
+4) Copy the token address from the terminal:
 
 ```
 EIP20: 0x345ca3e014aaf5dca488057592ee47305d9b3e10
@@ -32,7 +32,7 @@ const tokenAddress = '0x345ca3e014aaf5dca488057592ee47305d9b3e10'
 6) Open a new terminal tab and run the webapp: `npm run dev`
 
 
-## Web app commands
+## Web App Commands
 
 ``` bash
 # install dependencies
@@ -45,7 +45,7 @@ $ npm run dev
 $ npm run build
 $ npm start
 
-# generate static project
+# generate static project using
 $ npm run generate
 
 # lint or lintfix
@@ -53,7 +53,7 @@ $ npm run lint
 $ npm run lintfix
 ```
 
-## Truffle commands
+## Truffle Commands
 
 ``` bash
 # run contract tests

@@ -1,11 +1,11 @@
 # nuxt-box
-nuxt-box is a truffle box using the [Nuxt.js]("https://nuxtjs.org") framework to create a [Vue.js]("https://vuejs.org/") application that can interact with the smart contracts on [Ethereum]("https://ethereum.org/").
+nuxt-box is a truffle box using the [Nuxt.js](https://nuxtjs.org) framework to create a [Vue.js](https://vuejs.org/) application that can interact with the smart contracts on [Ethereum](https://ethereum.org/).
 
 ## Setup & Installation
-- Install [truffle]("http://truffleframework.com"): `npm i -g truffle`
+- Install [truffle](http://truffleframework.com): `npm i -g truffle`
 - Clone the repository: `git clone https://github.com/Paperchain/nuxt-box`
 - Install package depencencies: `npm i`
-- Install [Metamask browser extension]("https://metamask.io/")
+- Install [Metamask browser extension](https://metamask.io/)
 
 ## Running the Application
 
@@ -13,7 +13,7 @@ nuxt-box is a truffle box using the [Nuxt.js]("https://nuxtjs.org") framework to
     Custom RPC with address: http://localhost:9545 from Metamask Networks tab.
     
 1) Open terminal and run the development server: `truffle develop`
-2) Connect local-rpc account with MetaMask. Follow [this answer]("https://ethereum.stackexchange.com/questions/30593/how-can-i-import-the-accounts-from-truffle-develop-into-metamask") on Ethereum StackExchange.
+2) Connect local-rpc account with MetaMask. Follow [this answer](https://ethereum.stackexchange.com/questions/30593/how-can-i-import-the-accounts-from-truffle-develop-into-metamask) on Ethereum StackExchange.
 This account will have tokens and ether for transactions.
 3) Deploy the contracts to the local-rpc: `migrate --reset`
 4) Copy the token address from the terminal:

@@ -1,3 +1,5 @@
+![nuxt-box](https://storage.googleapis.com/paperchain-assets/nuxt-box-banner.png)
+
 # nuxt-box
 nuxt-box is a truffle box using the [Nuxt.js](https://nuxtjs.org) framework to create a [Vue.js](https://vuejs.org/) application that can interact with the smart contracts on [Ethereum](https://ethereum.org/).
 

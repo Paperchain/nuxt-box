@@ -1,12 +1,11 @@
 ![nuxt-box](https://storage.googleapis.com/paperchain-assets/nuxt-box-banner.png)
 
-# nuxt-box
-nuxt-box is a truffle box using the [Nuxt.js](https://nuxtjs.org) framework to create a [Vue.js](https://vuejs.org/) application that can interact with the smart contracts on [Ethereum](https://ethereum.org/).
+# Nuxt-box
+Nuxt-box is a truffle box using the [Nuxt.js](https://nuxtjs.org) framework to create a [Vue.js](https://vuejs.org/) application that can interact with the smart contracts on [Ethereum](https://ethereum.org/).
 
 ## Setup & Installation
 - Install [truffle](http://truffleframework.com): `npm i -g truffle`
-- Clone the repository: `truffle unbox Paperchain/nuxt-box`
-- Install package depencencies: `npm i`
+- Download the box. This also takes care of installing the necessary dependencies: `truffle unbox Paperchain/nuxt-box`
 - Install [Metamask browser extension](https://metamask.io/)
 
 ## Running the Application

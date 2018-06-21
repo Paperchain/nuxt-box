@@ -5,7 +5,7 @@ nuxt-box is a truffle box using the [Nuxt.js](https://nuxtjs.org) framework to c
 
 ## Setup & Installation
 - Install [truffle](http://truffleframework.com): `npm i -g truffle`
-- Clone the repository: `git clone https://github.com/Paperchain/nuxt-box`
+- Clone the repository: `truffle unbox Paperchain/nuxt-box`
 - Install package depencencies: `npm i`
 - Install [Metamask browser extension](https://metamask.io/)
 
